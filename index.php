@@ -4,10 +4,10 @@
 <main>
 
     <section class="row justify-content-evenly">
-        <h2 class="col-sm-12">usuarios</h2>
+        <h2 class="col-sm-12">cartelera</h2>
 
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
-            <img src="img/estreno10.png" class="card-img-top" alt="...">
+            <img src="img/CASA 2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Guardianes de la Galaxia</h5>
                 <p class="card-text">Breve Descripción.</p>
