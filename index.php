@@ -4,7 +4,7 @@
 <main>
 
     <section class="row justify-content-evenly">
-        <h2 class="col-sm-12">Cartelera</h2>
+        <h2 class="col-sm-12">usuarios</h2>
 
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
             <img src="img/estreno10.png" class="card-img-top" alt="...">
