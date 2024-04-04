@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap');
+
+/*variables css*/
+:root {
+    --Rojo: #D9183B;
+    --Azul: #5062DA;
+    --Gris: #F2F2F2;
+    --Negro: #0D0D0D;
+    --fuente: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--Rojo) !important;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+    /* text-decoration: underline; */
+}
+
+.bg-azul {
+    background-color: var(--Azul) !important;
+}
+
+header {
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+.nav-link,
+footer,
+.active,
+.dropdown-item {
+    color: #ffffff !important;
+}
+
+.dropdown-item:hover,
+.nav-item:hover {
+    color: white !important;
+    background-color: var(--Rojo);
+}
+
+footer {
+    margin-top: 2em !important;
+}
+
+.btn-rojo {
+    background-color: var(--Rojo) !important;
+    color: var(--Gris);
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+.btn-rojo:hover {
+    background-color: white !important;
+    color: var(--Rojo);
+    border: 2px solid var(--Rojo);
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    /*transition: all 1s;
+    */
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}

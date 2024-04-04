@@ -1,0 +1,19 @@
+@import url(comun.css);
+
+.card {
+    text-align: center;
+    margin-bottom: 2em;
+    width: 230px !important;
+}
+
+.card-img-top {
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

@@ -1,0 +1,11 @@
+@import url(comun.css);
+
+.imgListado {
+    width: 100px;
+    height: 100px;
+}
+
+
+table {
+    text-align: center;
+}
