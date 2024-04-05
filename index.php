@@ -19,7 +19,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Curridabat</h5>
                 <p class="card-text">350 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -82,8 +82,8 @@
             <img src="img/Casa 10.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Casa en Monte la Cruz</h5>
-                <p class="card-text">Breve Descripción.</p>
-                <a href="#" class="btn btn-rojo">Ver Horarios</a>
+                <p class="card-text">1500m2.</p>
+                <a href="#" class="btn btn-rojo">Ver Detalles</a>
             </div>
 
 

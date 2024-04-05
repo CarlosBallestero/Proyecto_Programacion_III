@@ -5,7 +5,7 @@
     -->
  <footer class="row text-center bg-azul">
      <div class="col-md-6 col-lg-4">
-         <img src="img/logo.png" alt="Logo de la empresa" width="50">
+         <img src="img/Logo Proyecto.png" alt="Logo de la empresa" width="60">
      </div>
      <div class="col-md-6 col-lg-4">Enlaces</div>
      <div class="col-md-6 col-lg-4">Redes Sociales</div>
