@@ -11,7 +11,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Escazú</h5>
                 <p class="card-text">200 m2</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -19,7 +19,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Curridabat</h5>
                 <p class="card-text">350 m2.</p>
-                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a> </div>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -27,7 +27,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Heredia</h5>
                 <p class="card-text">1000 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
