@@ -29,6 +29,9 @@ $url = basename($_SERVER["PHP_SELF"], ".php");
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                            <a class="nav-link" href="servicios.php">Registrarse</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="acerca.php">Aun te interesa</a>
                         </li>
@@ -39,7 +42,10 @@ $url = basename($_SERVER["PHP_SELF"], ".php");
                             <a class="nav-link" href="contactenos.php">Nuestras propiedades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactenos.php">Testimonios</a>
+                            <a class="nav-link" href="testimonios.php">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.php">Contáctenos</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

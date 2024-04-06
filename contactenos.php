@@ -4,7 +4,7 @@
     <div class="col-md-4">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="nombre" name="nombre">
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Oficina</label>
         </div>
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="email" name="email">
@@ -14,12 +14,11 @@
             <label for="asunto">Asunto</label>
             <select id="asunto" name="asunto" class="form-select">
                 <option value="1">Pregunta</option>
-                <option value="2">Cotización</option>
-                <option value="3">Garantía</option>
+                <option value="2">Evaluación del sitio</option>
             </select>
         </div>
         <div class=" mb-3">
-            <label for="mensaje">Email</label>
+            <label for="mensaje">Mensaje</label>
             <textarea class="form-control" id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
         </div>
         <div class=" mb-3">

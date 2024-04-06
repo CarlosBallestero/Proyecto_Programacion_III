@@ -1,6 +1,6 @@
 <?php include "shared/header.php"; ?>
 <main>
-    <<div class="card col-md-6 col-lg-4" style="width: 107rem;">
+    <<div class="card col-md-6 col-lg-4" style="width: 80rem;">
             <div class="card-body">
                 <h5 class="card-title">¿Por qué elegirnos?</h5>
                 <p class="card-title">Somos una empresa comprometida con la calidad y la satisfacción del cliente. Nuestro equipo altamente capacitado se esfuerza por ofrecer productos y servicios de excelencia que superen las expectativas.</p>
