@@ -12,7 +12,6 @@
                 <h5 class="card-title">Casa en Escazú</h5>
                 <p class="card-text">200 m2</p>
                 <a href="detalle_propiedades_Escazu.php" class="btn btn-rojo">Ver Detalles</a>
-                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
