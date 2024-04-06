@@ -12,6 +12,7 @@
                 <h5 class="card-title">Casa en Escazú</h5>
                 <p class="card-text">200 m2</p>
                 <a href="detalle_propiedades_Escazu.php" class="btn btn-rojo">Ver Detalles</a>
+                
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -27,6 +28,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Heredia</h5>
                 <p class="card-text">1000 m2.</p>
+                
                 <a href="detalle_propiedades_Heredia.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
@@ -35,7 +37,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Sabana Norte</h5>
                 <p class="card-text">500 m2.</p>
-                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_SabanaN.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -43,7 +45,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Santa Ana</h5>
                 <p class="card-text">800 m2.</p>
-                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_SantaAna.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
