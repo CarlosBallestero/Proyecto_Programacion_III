@@ -1,7 +1,7 @@
 <?php include "shared/header.php" ?>
 <main>
 <div class="card col-md-6 col-lg-4" style="width: 40rem;">
-            <img src="img/CASA 2.jpg" class="card-img-top" alt="...">
+            <img src="img/CASA 3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Casa</h5>
                 <p class="card-text">Curriabat, San José, Costa Rica</p>

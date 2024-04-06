@@ -11,7 +11,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Escazú</h5>
                 <p class="card-text">200 m2</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_Escazu.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -19,7 +19,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Curridabat</h5>
                 <p class="card-text">350 m2.</p>
-                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_Curriabat.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -27,7 +27,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Heredia</h5>
                 <p class="card-text">1000 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_Heredia.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -35,7 +35,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Sabana Norte</h5>
                 <p class="card-text">500 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_SabanaN.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -43,7 +43,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Santa Ana</h5>
                 <p class="card-text">800 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_SantaAna.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -51,7 +51,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Guanacaste</h5>
                 <p class="card-text">2000 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_Guanacaste.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -59,7 +59,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Cartago</h5>
                 <p class="card-text">2500 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_Cartago.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -67,7 +67,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en San Carlos</h5>
                 <p class="card-text">1500 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_Sancarlos.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -75,7 +75,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Jacó</h5>
                 <p class="card-text">2500 m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_Jaco.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
         <div class="card col-md-6 col-lg-4" style="width: 18rem;">
@@ -83,7 +83,7 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Monte la Cruz</h5>
                 <p class="card-text">1500m2.</p>
-                <a href="#" class="btn btn-rojo">Ver Detalles</a>
+                <a href="detalle_propiedades_MontelaCruz.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
 
 
