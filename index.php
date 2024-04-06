@@ -27,7 +27,6 @@
             <div class="card-body">
                 <h5 class="card-title">Casa en Heredia</h5>
                 <p class="card-text">1000 m2.</p>
-                <a href="detalle_propiedades.php" class="btn btn-rojo">Ver Detalles</a>
                 <a href="detalle_propiedades_Heredia.php" class="btn btn-rojo">Ver Detalles</a>
             </div>
         </div>
