@@ -3,6 +3,7 @@
 <main class="row justify-content-center">
     
 <div class="col-md-4">
+    
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="nombre" name="nombre">
             <label for="nombre">Nombre</label>
