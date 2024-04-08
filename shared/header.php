@@ -47,6 +47,10 @@ $url = basename($_SERVER["PHP_SELF"], ".php");
                         <li class="nav-item">
                             <a class="nav-link" href="testimonios.php">Testimonios</a>
                         </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mapa.php">Mapa</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contactenos.php">Contáctenos</a>
                         </li>
