@@ -9,6 +9,8 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
 
+include "../public/conexion.php";
+
 return function (App $app) {
     $app->options('/{routes:.*}', function (Request $request, Response $response) {
         // CORS Pre-Flight OPTIONS Request Handler
@@ -18,34 +20,84 @@ return function (App $app) {
     
     //CRUD Usuarios
     $app->post('/insertarUsuario', function (Request $request, Response $response) {
-        $response->getBody()->write('Insertar Usuario');
-        return $response;
+        //Abrir la conexion
+        $db = conectar();
+
+       //obtener el registro a guardar
+       $rec = $request->getQueryParams();
+
+       //guardar en bd
+       $res = $db->AutoExecute("usuarios", $rec, "INSERT");
+
+       $response->getBody()->write(strval($res));
+       return $response;
     });
 
     $app->put('/modificarUsuario', function (Request $request, Response $response, array $args) {
-        $response->getBody()->write('Modificar Usuario');
+        //Abrir la conexion
+        $db = conectar();
+
+        //obtener el registro a guardar
+        $rec = $request->getQueryParams();
+
+        //guardar en bd        
+        $res = $db->AutoExecute("usuarios", $rec, "UPDATE","id=$rec[id]");
+
+        $response->getBody()->write(strval($res));
         return $response;
     });
 
-    $app->delete('/eliminarUsuario', function (Request $request, Response $response, array $args) {
-        $response->getBody()->write('Eliminar Usuario');
+    $app->delete('/eliminarUsuario/{id}', function (Request $request, Response $response, array $args) {
+        $id = $args['id'];
+        //Abrir la conexión
+        $db = conectar();
+        //consulta de borrado
+        $sql="DELETE FROM usuarios WHERE id='$id'";
+        $res=$db->Execute($sql);
+
+        $response->getBody()->write(strval(var_dump($res)));
         return $response;
     });
 
-
+    
     //CRUD Usuarios
     $app->post('/insertarCasa', function (Request $request, Response $response) {
-        $response->getBody()->write('Insertar Casa');
-        return $response;
+        //Abrir la conexion
+        $db = conectar();
+
+       //obtener el registro a guardar
+       $rec = $request->getQueryParams();
+
+       //guardar en bd
+       $res = $db->AutoExecute("casas", $rec, "INSERT");
+
+       $response->getBody()->write(strval($res));
+       return $response;
     });
 
     $app->put('/modificarCasa', function (Request $request, Response $response, array $args) {
-        $response->getBody()->write('Modificar Casa');
+        //Abrir la conexion
+        $db = conectar();
+
+        //obtener el registro a guardar
+        $rec = $request->getQueryParams();
+
+        //guardar en bd        
+        $res = $db->AutoExecute("casas", $rec, "UPDATE","id=$rec[id]");
+
+        $response->getBody()->write(strval($res));
         return $response;
     });
 
-    $app->delete('/eliminarCasa', function (Request $request, Response $response, array $args) {
-        $response->getBody()->write('Eliminar Casa');
+    $app->delete('/eliminarCasa/{id}', function (Request $request, Response $response, array $args) {
+        $id = $args['id'];
+        //Abrir la conexión
+        $db = conectar();
+        //consulta de borrado
+        $sql="DELETE FROM casas WHERE id='$id'";
+        $res=$db->Execute($sql);
+
+        $response->getBody()->write(strval(var_dump($res)));
         return $response;
     });
 

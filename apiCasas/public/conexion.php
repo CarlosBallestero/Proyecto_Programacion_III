@@ -10,13 +10,15 @@
         $user="root";
         $pass="";
         $db="casasapp";
-    }
     
-    //habilitar el modo debug para desarrollo
-    $conector->debug=true;      // devolver a false al terminar el desarrollo
+    
+        //habilitar el modo debug para desarrollo
+        $conector->debug=true;      // devolver a false al terminar el desarrollo
 
-    //abrir la conexion
-    $conector->Connect($host, $user, $pass, $db);
+        //abrir la conexion
+        $conector->Connect($host, $user, $pass, $db);
 
-    return $conector;
+        return $conector;
+        
+    }
 ?>
