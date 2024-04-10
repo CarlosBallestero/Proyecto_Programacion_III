@@ -15,10 +15,40 @@ return function (App $app) {
         return $response;
     });
 
-    $app->get('/', function (Request $request, Response $response) {
-        $response->getBody()->write('Hello world!');
+    
+    //CRUD Usuarios
+    $app->post('/insertarUsuario', function (Request $request, Response $response) {
+        $response->getBody()->write('Insertar Usuario');
         return $response;
     });
+
+    $app->put('/modificarUsuario', function (Request $request, Response $response, array $args) {
+        $response->getBody()->write('Modificar Usuario');
+        return $response;
+    });
+
+    $app->delete('/eliminarUsuario', function (Request $request, Response $response, array $args) {
+        $response->getBody()->write('Eliminar Usuario');
+        return $response;
+    });
+
+
+    //CRUD Usuarios
+    $app->post('/insertarCasa', function (Request $request, Response $response) {
+        $response->getBody()->write('Insertar Casa');
+        return $response;
+    });
+
+    $app->put('/modificarCasa', function (Request $request, Response $response, array $args) {
+        $response->getBody()->write('Modificar Casa');
+        return $response;
+    });
+
+    $app->delete('/eliminarCasa', function (Request $request, Response $response, array $args) {
+        $response->getBody()->write('Eliminar Casa');
+        return $response;
+    });
+
 
     $app->group('/users', function (Group $group) {
         $group->get('', ListUsersAction::class);
