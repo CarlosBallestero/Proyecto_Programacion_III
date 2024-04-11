@@ -12,18 +12,18 @@
         $titulo = "Catálogo Usuarios";
         break;
       case 'peliculas':
-        $titulo = "Catálogo Peliculas";
-        require "catalogos/peliculas/listPeliculas.php";
+        $titulo = "Catálogo Casas";
+        require "catalogos/datos/listCasas.php";
         break;
-      case 'horarios':
-        $titulo = "Catálogo Horarios";
-        break;
-      case 'banners':
-        $titulo = "Catálogo Banners";
-        break;
-      case 'nuevoPelicula':
-        $titulo = "Nueva Película";
-        require "catalogos/peliculas/nuevoPelicula.php";
+      // case 'horarios':
+      //   $titulo = "Catálogo Horarios";
+      //   break;
+      // case 'banners':
+      //   $titulo = "Catálogo Banners";
+      //   break;
+      case 'nuevoCasa':
+        $titulo = "Nueva Casa";
+        require "catalogos/datos/nuevoCasa.php";
         break;
       default:
         $titulo = "Bienvenido";

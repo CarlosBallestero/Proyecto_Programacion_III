@@ -1,3 +1,5 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 <h2 class="my-5 mx-5"><?php echo $titulo ?></h2>
 <div class="container">
     <div class="d-flex bd-highlight mb-3">
@@ -6,7 +8,7 @@
         </div>
         <div class="p-2 bd-highlight">
 
-            <a href="index.php?page=nuevoPelicula" class="btn btn-secondary"><i class="fas fa-plus"></i> Nuevo</a>
+            <a href="index.php?page=nuevoCasa" class="btn btn-secondary"><i class="fas fa-plus"></i> Nuevo</a>
         </div>
     </div>
 
@@ -16,16 +18,16 @@
                 <tr>
                     <th scope="col">Id</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">Sinopsis</th>
-                    <th scope="col">Duración</th>
-                    <th scope="col">Director</th>
-                    <th scope="col">Género</th>
-                    <th scope="col">Acción</th>
+                    <th scope="col">Metros cuadrados</th>
+                    <th scope="col">Ubicación</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Detalles</th>
                 </tr>
             </thead>
             <tbody id="datosTabla">
 
             </tbody>
         </table>
+        <script src="js/listCasas.js"></script>
     </div>
 </div>

@@ -59,6 +59,21 @@ return function (App $app) {
         return $response;
     });
 
+    $app->get('/usuarios', function (Request $request, Response $response, array $args) {
+        //Abrir la conexión
+        $db = conectar();
+
+        //cambiar metodo fecth
+        $db->SetFetchMode(ADODB_FETCH_ASSOC);
+
+        //consulta de 
+        $sql="SELECT * FROM usuarios";
+        $res=$db->GetAll($sql);
+
+        $response->getBody()->write(json_encode($res));
+        return $response;
+    });
+
     
     //CRUD Usuarios
     $app->post('/insertarCasa', function (Request $request, Response $response) {
@@ -100,7 +115,21 @@ return function (App $app) {
         $response->getBody()->write(strval(var_dump($res)));
         return $response;
     });
+    
+    $app->get('/casas', function (Request $request, Response $response, array $args) {
+        //Abrir la conexión
+        $db = conectar();
 
+        //cambiar metodo fecth
+        $db->SetFetchMode(ADODB_FETCH_ASSOC);
+
+        //consulta de 
+        $sql="SELECT * FROM casas";
+        $res=$db->GetAll($sql);
+
+        $response->getBody()->write(json_encode($res));
+        return $response;
+    });
 
     $app->group('/users', function (Group $group) {
         $group->get('', ListUsersAction::class);

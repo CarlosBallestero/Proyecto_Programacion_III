@@ -1,0 +1,51 @@
+var ID = -1;
+if (sessionStorage.getItem("id") != null) {
+    $("#id").val(sessionStorage.getItem("id"));
+    $("#nombre").val(sessionStorage.getItem("nombre"));
+    $("#metros").val(sessionStorage.getItem("metros"));
+    $("#ubicacion").val(sessionStorage.getItem("ubicacion"));
+    $("#precio").val(sessionStorage.getItem("precio"));
+    $("#detalles").val(sessionStorage.getItem("detalles"));
+    sessionStorage.clear();
+    ID = 1;
+}
+
+$("#guardar").click(function (e) {
+
+    let metodo = $(this).data('metodo');
+    //if (validacion.form()) {
+        //generar parametros
+        let datos = $("#frmCasas").serialize();
+        const accion = (ID == -1) ? "insertar" : "modificar";
+        const petición = (ID == -1) ? "post" : "put";
+        peticionGuardar(accion, petición, datos);
+    //} else {
+        //Swal.fire({
+            //title: "Error de ingreso de datos",
+            //text: "Debe corregir datos",
+            //icon: "warning"
+    //    })
+    }
+//}
+);
+
+function peticionGuardar(accion, petición, datos) {
+    const URL = `http://localhost:8080/${accion}?${datos}`
+    console.log(URL);
+    $.ajax({
+        type: petición,
+        url: URL,
+        success: function (res) {
+            Swal.fire({
+                title: "Mensaje",
+                text: "Datos Guardados Correctamente",
+                icon: "success"
+            })
+
+        }, error: function (xhr) {
+            console.log(xhr.statusText + xhr.responseText)
+        }, complete: function () {
+            console.log("Terminado")
+        }
+    });
+}

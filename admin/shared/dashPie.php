@@ -10,11 +10,11 @@
 
 <?php
 
-if ($page == "peliculas") {
-    echo '<script src="js/listPeliculas.js"></script>';
-} else if ($page == "nuevoPelicula") {
+if ($page == "casas") {
+    echo '<script src="js/listCasas.js"></script>';
+} else if ($page == "nuevoCasa") {
     echo '<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>';
-    echo '<script src="js/guardarPelicula.js"></script>';
+    echo '<script src="js/guardarCasas.js"></script>';
 }
 
 ?>
