@@ -29,7 +29,7 @@ function crearFila(p) {
         <tr>
             <td scope="col">${p.cedula}</td>
             <td scope="col">${p.contraseña}</td>
-            <td scope="col">${p.Nombre}</td>
+            <td scope="col">${p.nombre}</td>
             <td scope="col">${p.primerApellido}</td>
             <td scope="col">${p.segundoApellido}</td>
             <td scope="col">${p.correo}</td>
