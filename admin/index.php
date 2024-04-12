@@ -10,7 +10,12 @@
     switch ($page) {
       case 'usuario':
         $titulo = "Catálogo Usuarios";
+        require "catalogos/datos/listUsuarios.php";
         break;
+        case 'nuevoUsuario':
+          $titulo = "Nuevo Usuario";
+          require "catalogos/datos/nuevoUsuario.php";
+          break;
       case 'peliculas':
         $titulo = "Catálogo Casas";
         require "catalogos/datos/listCasas.php";

@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>Dashboard CineApp</title>
+    <title>Dashboard CasasApp</title>
 
 
   
@@ -22,7 +22,7 @@
    
 
 <header class="navbar sticky-top bg-amarillo flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="index.php">CineApp</a>
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="index.php">CasasApp</a>
 
   <ul class="navbar-nav flex-row d-md-none">
     
@@ -63,10 +63,10 @@
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="index.php?page=peliculas">
                 <i class="fa-solid fa-video"></i>
-                Películas
+                Casas
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="index.php?page=horarios">
                 <i class="fa-solid fa-calendar"></i>
                 Horarios
@@ -77,7 +77,7 @@
                 <i class="fa-solid fa-image"></i>
                 Banners
               </a>
-            </li>
+            </li> -->
            
           </ul>
 
