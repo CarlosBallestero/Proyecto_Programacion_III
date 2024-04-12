@@ -27,12 +27,15 @@ function cargarTabla() {
 function crearFila(p) {
     return `
         <tr>
-            <td scope="col">${p.id}</td>
-            <td scope="col">${p.nombre}</td>
-            <td scope="col">${p.metros}</td>
-            <td scope="col">${p.ubicacion}</td>
-            <td scope="col">${p.precio}</td>
-            <td scope="col">${p.detalles}</td>
+            <td scope="col">${p.cedula}</td>
+            <td scope="col">${p.contraseña}</td>
+            <td scope="col">${p.Nombre}</td>
+            <td scope="col">${p.primerApellido}</td>
+            <td scope="col">${p.segundoApellido}</td>
+            <td scope="col">${p.correo}</td>
+            <td scope="col">${p.fechaNacimiento}</td>
+            <td scope="col">${p.telefono}</td>
+            <td scope="col">${p.numeroWA}</td>
             <td scope="col">
             <button class="me-3 btn btn-outline-warning"><i class="fa-solid fa-pencil"></i></button>
             <button class="me-3 btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>

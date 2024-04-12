@@ -31,6 +31,6 @@
 
             </tbody>
         </table>
-        <script src="js/listCasas.js"></script>
+        <script src="js/listUsuarios.js"></script>
     </div>
 </div>
