@@ -1,3 +1,36 @@
+//validar formula
+var validacion = $("#frmUsuarios").validate({
+    rules: {
+        cedula: {
+            required: true
+        },
+        contraseña: {
+            required: true
+        },
+        nombre: {
+            required: true
+        },
+        primerApellido: {
+            required: true
+        },
+        segundoApellido: {
+            required: true
+        },
+        correo: {
+            required: true
+        },
+        fechaNacimiento: {
+            required: true
+        },
+        telefono: {
+            required: true
+        },
+        numeroWA: {
+            required: true
+        },
+    }
+});
+
 var ID = -1;
 if (sessionStorage.getItem("cedula") != null) {
     $("#cedula").val(sessionStorage.getItem("cedula"));
@@ -12,25 +45,22 @@ if (sessionStorage.getItem("cedula") != null) {
     sessionStorage.clear();
     ID = 1;
 }
-
 $("#guardar").click(function (e) {
-
-    let metodo = $(this).data('metodo');
-    //if (validacion.form()) {
+    if (validacion.form()) {
         //generar parametros
         let datos = $("#frmUsuarios").serialize();
-        const accion = (ID == -1) ? "insertar" : "modificar";
+        const accion = (ID == -1) ? "insertarUsuario" : "modificarUsuario";
         const petición = (ID == -1) ? "post" : "put";
         peticionGuardar(accion, petición, datos);
-    //} else {
-        //Swal.fire({
-            //title: "Error de ingreso de datos",
-            //text: "Debe corregir datos",
-            //icon: "warning"
-    //    })
+    } else {
+        Swal.fire({
+            title: "Error de ingreso de datos",
+            text: "Debe corregir datos",
+            icon: "warning"
+        })
     }
-//}
-);
+
+});
 
 function peticionGuardar(accion, petición, datos) {
     const URL = `http://localhost:8080/${accion}?${datos}`
