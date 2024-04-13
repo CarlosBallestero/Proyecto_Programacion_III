@@ -17,6 +17,13 @@ if ($page == "casas") {
     echo '<script src="js/guardarCasas.js"></script>';
 }
 
+if ($page == "usuarios") {
+    echo '<script src="js/listUsuarios.js"></script>';
+} else if ($page == "nuevoUsuario") {
+    echo '<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>';
+    echo '<script src="js/guardarUsuarios.js"></script>';
+}
+
 ?>
 </body>
 
