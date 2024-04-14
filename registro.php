@@ -1,58 +1,66 @@
 <?php include "shared/header.php"; ?>
 <main>
-<form class="row g-3 needs-validation" novalidate>
-  <div class="col-md-2">
+<form id="frmUsuarios" class="row g-3 needs-validation" novalidate>
+<input type="hidden" id="id" name="id">  
+<div class="col-md-2">
     <label for="validationCustom01" class="form-label">Cédula</label>
-    <input type="text" class="form-control" id="validationCustom01" value="" required>
+    <input type="text" class="form-control" name="cedula" id="cedula" value="" required>
     <div class="valid-feedback">
       Looks good!
     </div>
   </div>
   <div class="col-md-2">
     <label for="validationCustom02" class="form-label">Contraseña</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <input type="text" class="form-control" name="contraseña" id="contraseña" value="" required>
     <div class="valid-feedback">
       Looks good!
     </div>
     </div>
     <div class="col-md-2">
     <label for="validationCustom02" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <input type="text" class="form-control" name="nombre" id="nombre" value="" required>
     <div class="valid-feedback">
       Looks good!
     </div>
     </div>
     <div class="col-md-2">
-    <label for="validationCustom02" class="form-label">Apellidos</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <label for="validationCustom02" class="form-label">Primer Apellido</label>
+    <input type="text" class="form-control" name="primerApellido" id="primerApellido" value="" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    </div>
+    <div class="col-md-2">
+    <label for="validationCustom02" class="form-label">Segundo Apellido</label>
+    <input type="text" class="form-control" name="segundoApellido" id="segundoApellido" value="" required>
     <div class="valid-feedback">
       Looks good!
     </div>
     </div>
     <div class="col-md-2">
     <label for="validationCustom02" class="form-label">Correo Electrónico</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <input type="text" class="form-control" name="correo" id="correo" value="" required>
     <div class="valid-feedback">
       Looks good!
     </div>
     </div>
     <div class="col-md-2">
     <label for="validationCustom02" class="form-label">Fecha de nacimiento</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <input type="text" class="form-control" name="fechaNacimiento" id="fechaNacimiento" value="" required>
     <div class="valid-feedback">
       Looks good!
     </div>
     </div>
     <div class="col-md-2">
     <label for="validationCustom02" class="form-label">Teléfono</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <input type="text" class="form-control" name="telefono" id="telefono" value="" required>
     <div class="valid-feedback">
       Looks good!
     </div>
     </div>
     <div class="col-md-2">
     <label for="validationCustom02" class="form-label">WhatsApp</label>
-    <input type="text" class="form-control" id="validationCustom02" value="" required>
+    <input type="text" class="form-control" name="numeroWA" id="numeroWA"id="validationCustom02" value="" required>
     <div class="valid-feedback">
       Looks good!
     </div>
@@ -73,7 +81,7 @@
     </div>
   </div>
   <div class="col-12">
-    <button class="btn btn-primary" type="submit">Registrar usuario</button>
+    <button id="guardar" type="button"  class="btn btn-primary" data-metodo="agregar">Registrar usuario</button>
   </div>
 </form>
 </main>
