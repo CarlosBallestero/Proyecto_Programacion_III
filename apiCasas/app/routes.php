@@ -74,8 +74,41 @@ return function (App $app) {
         return $response;
     });
 
+
+    //Login de usuarios
+      
     
-    //CRUD Usuarios
+
+    $app->post('/login', function (Request $request, Response $response, $args) {
+        $data = $request->getParsedBody();
+        $cedula = $data['cedula'];
+        $contraseña = $data['contraseña'];
+    
+        $pdo = $this->get('pdo');
+    
+        // Consulta a la base de datos utilizando PDO
+        $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE username = :username AND password = :password");
+        $stmt->execute(['cedula' => $cedula, 'contraseña' => $contraseña]);
+        $user = $stmt->fetch();
+
+        if ($user) {
+            $data = ['message' => 'Inicio de sesión exitoso'];
+            $jsonResponse = json_encode($data);
+
+            $response->getBody()->write($jsonResponse);
+            return $response->withHeader('Content-Type', 'application/json')->withStatus(200);
+        } else {
+            //return $response->withStatus(401)->withJson(['message' => 'Credenciales inválidas']);
+            $data = ['message' => 'Credenciales incorrectas'];
+            $jsonResponse = json_encode($data);
+
+            $response->getBody()->write($jsonResponse);
+            return $response->withHeader('Content-Type', 'application/json')->withStatus(401);
+        }
+    });
+
+    
+    //CRUD Casas
     $app->post('/insertarCasa', function (Request $request, Response $response) {
         //Abrir la conexion
         $db = conectar();

@@ -1,4 +1,6 @@
 <?php include "shared/header.php"; ?>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 <main>
 <form id="frmUsuarios" class="row g-3 needs-validation" novalidate>
 <input type="hidden" id="id" name="id">  
@@ -69,7 +71,7 @@
   <label for="formFile" class="form-label">Default file input example</label>
   <input class="form-control" type="file" id="formFile">
 </div>
-  <div class="col-12">
+  <!-- <div class="col-12">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
       <label class="form-check-label" for="invalidCheck">
@@ -79,10 +81,13 @@
         You must agree before submitting.
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="col-12">
     <button id="guardar" type="button"  class="btn btn-primary" data-metodo="agregar">Registrar usuario</button>
   </div>
 </form>
 </main>
+
+<script src="admin\js\guardarUsuarios.js"></script>
+
 <?php include "shared/footer.php";?>

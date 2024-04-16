@@ -1,4 +1,4 @@
-//validar formula
+//validar formula - afuera
 var validacion = $("#frmUsuarios").validate({
     rules: {
         cedula: {
@@ -61,6 +61,7 @@ $("#guardar").click(function (e) {
     }
 
 });
+
 
 function peticionGuardar(accion, petición, datos) {
     const URL = `http://localhost:8080/${accion}?${datos}`
