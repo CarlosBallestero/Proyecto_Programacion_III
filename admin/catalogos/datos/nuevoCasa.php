@@ -31,10 +31,10 @@
             <input type="text" class="form-control" name="detalles" id="detalles" placeholder="Director">
             <label for="director">Detalles</label>
         </div>
-        <div class="form-floating mb-3">
+        <!-- <div class="form-floating mb-3">
             <input type="file" class="form-control" name="imagen" id="imagen" placeholder="imagen">
             <label for="imagen">Imagen</label>
-        </div>
+        </div> -->
 
         <div class="mb-3">
             <button id="guardar" type="button" class="btn btn-outline-dark" data-metodo="agregar">Guardar</button>
