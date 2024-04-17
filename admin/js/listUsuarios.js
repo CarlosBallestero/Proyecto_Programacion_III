@@ -45,3 +45,22 @@ function crearFila(p) {
     `;
     
 }
+
+function eliminar(id) {
+    const URL = `http://localhost:8080/eliminarUsuario/${id}`
+    $.ajax({
+        type: "delete",
+        url: URL,
+        success: function (res) {
+            Swal.fire({
+                title: "Mensaje",
+                text: "Datos Eliminados Correctamente",
+                icon: "success"
+            })
+        }, error: function (xhr) {
+            console.log(xhr.statusText + xhr.responseText)
+        }, complete: function () {
+            console.log("Terminado")
+        }
+    });
+}
